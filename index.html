@@ -17,7 +17,8 @@
         <!-- Aggiunta al titolo di un id o classe tramite v-bind -->
         <h1 :id="titoloId">{{ titolo1 }}</h1>
         <!-- immagine aggiunta tramite data con VUE -->
-        <img v-bind:src="url" :id="imgId">
+        <img v-bind:src="url" :id="imgId" :class="imgD" title="Vista dall'alto della citta">
+        <button type="button" v-on:click="mostra">Mostra Immagine</button>
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

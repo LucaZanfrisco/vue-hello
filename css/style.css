@@ -9,3 +9,9 @@
     height: 100%;
     object-fit: contain;
 }
+.imgHidden{
+    display: none;
+}
+.imgShow{
+    display: block;
+}
