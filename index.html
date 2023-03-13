@@ -5,11 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Una volta c'era il sole</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Elemento per la creazione dell'applicazione tramite l'uso di VUE -->
     <div id="app">
-        <h1>{{ titolo }}</h1>
+        <!-- Prova titolo tra baffi -->
+        <h1 >{{ titolo1 }}</h1>
+        <!-- Prova titolo tramite interpolazione -->
+        <h1 v-html="titolo2"></h1>
+        <!-- Aggiunta al titolo di un id o classe tramite v-bind -->
+        <h1 :id="titoloId">{{ titolo1 }}</h1>
+        <!-- immagine aggiunta tramite data con VUE -->
+        <img v-bind:src="url" :id="imgId">
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

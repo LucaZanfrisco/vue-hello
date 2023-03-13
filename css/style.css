@@ -1,0 +1,11 @@
+#container{
+    width: 62.5rem;
+    margin: 0 auto;
+    text-align: center;
+    overflow-y: auto;
+}
+#imgScale{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
